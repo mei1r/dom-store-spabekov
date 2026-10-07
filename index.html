@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store DOM | Мейрбек Спабеков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Управление товарами (DOM)</h1>
+
+
+        <form id="add-form" class="card">
+            <h2>Добавить товар</h2>
+            <div class="form-group">
+                <label for="name">Название товара:</label>
+                <input type="text" id="name" placeholder="Например: Яблоко">
+                <span class="error-msg" id="error-name"></span>
+            </div>
+            <div class="form-group">
+                <label for="price">Цена:</label>
+                <input type="number" id="price" placeholder="Цена (больше 0)">
+                <span class="error-msg" id="error-price"></span>
+            </div>
+            <div class="form-group">
+                <label for="qty">Количество:</label>
+                <input type="number" id="qty" placeholder="Количество">
+                <span class="error-msg" id="error-qty"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить</button>
+        </form>
+
+
+        <div id="store-list" class="store-list">
+        </div>
+
+
+        <div class="total-block card">
+            <h2>Итого: <span id="total-price">0</span> ₸</h2>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
